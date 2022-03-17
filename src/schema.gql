@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Car {
+  cdate: String
+  plate: String
+  plateHash: String
+  year: String
+}
+
+input CreateCarInput {
+  plate: String!
+  year: Float!
+}
+
+type Mutation {
+  createCar(createCarData: CreateCarInput!): Car!
+}
+
+type Query {
+  getCars: [Car!]!
+}
